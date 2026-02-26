@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8368a9",
+              "primary-dark": "#634d94",
+              "background-light": "#e9e4f0",
+              surface: "#ffffff",
+              "text-main": "#4a3f6b",
+            },
+            fontFamily: {
+              display: ["Public Sans", "sans-serif"],
+            },
+            borderRadius: {
+              "4xl": "2rem",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Crear Cuenta</title>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body class="bg-background-light font-display text-text-main min-h-screen">
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden"
+    >
+      <!-- Top Navigation -->
+      <div class="flex items-center p-4 pb-2 justify-between">
+        <a
+          class="text-text-main flex size-12 shrink-0 items-center justify-center rounded-full hover:bg-primary/10 transition-colors"
+          href="#"
+          style=""
+        >
+          <span class="material-symbols-outlined" style="">arrow_back</span>
+        </a>
+        <h2
+          class="text-text-main text-lg font-bold leading-tight tracking-tight flex-1 text-center pr-12"
+          style=""
+        >
+          Registro
+        </h2>
+      </div>
+      <!-- Header Section -->
+      <div class="px-6 pt-8 pb-4">
+        <h1
+          class="text-text-main tracking-tight text-[32px] font-bold leading-tight text-center"
+          style=""
+        >
+          Únete a nosotros
+        </h1>
+        <p
+          class="text-text-main/70 text-base font-normal leading-normal pt-2 text-center"
+          style=""
+        >
+          Completa tus datos&nbsp;
+        </p>
+      </div>
+      <!-- Registration Form -->
+      <div class="flex flex-col gap-4 px-6 py-4 max-w-md mx-auto w-full">
+        <!-- Full Name -->
+        <!-- Profile Picture Upload -->
+        <div class="flex flex-col items-center justify-center py-6">
+          <div class="relative group">
+            <div
+              class="size-32 rounded-full bg-white shadow-sm border-2 border-dashed border-primary/30 flex items-center justify-center overflow-hidden transition-all group-hover:border-primary/60"
+            >
+              <span
+                class="material-symbols-outlined text-[64px] text-primary/30"
+                style=""
+                >person</span
+              >
+            </div>
+            <button
+              class="absolute bottom-0 right-0 size-10 bg-primary text-white rounded-full flex items-center justify-center shadow-lg border-4 border-background-light hover:bg-primary-dark transition-colors"
+              style=""
+            >
+              <span class="material-symbols-outlined text-xl" style=""
+                >add</span
+              >
+            </button>
+          </div>
+          <span
+            class="text-primary-dark text-xs font-bold mt-3 uppercase tracking-wider"
+            style=""
+            >Añadir foto</span
+          >
+        </div>
+        <label class="flex flex-col gap-2" style="">
+          <span
+            class="text-text-main text-sm font-semibold leading-normal ml-1"
+            style=""
+            >Nombre completo</span
+          >
+          <div class="relative">
+            <span
+              class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary/60"
+              style=""
+              >person</span
+            >
+            <input
+              class="form-input flex w-full rounded-2xl border-none bg-white shadow-sm focus:ring-2 focus:ring-primary h-14 pl-12 pr-4 text-base placeholder:text-slate-400"
+              placeholder="Ej. Natalia Isabel"
+              type="text"
+            />
+          </div>
+        </label>
+        <!-- Email -->
+        <label class="flex flex-col gap-2" style="">
+          <span
+            class="text-text-main text-sm font-semibold leading-normal ml-1"
+            style=""
+            >Correo electrónico</span
+          >
+          <div class="relative">
+            <span
+              class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary/60"
+              style=""
+              >mail</span
+            >
+            <input
+              class="form-input flex w-full rounded-2xl border-none bg-white shadow-sm focus:ring-2 focus:ring-primary h-14 pl-12 pr-4 text-base placeholder:text-slate-400"
+              placeholder="ejemplo@correo.com"
+              type="email"
+            />
+          </div>
+        </label>
+        <!-- Password -->
+        <label class="flex flex-col gap-2" style="">
+          <span
+            class="text-text-main text-sm font-semibold leading-normal ml-1"
+            style=""
+            >Contraseña</span
+          >
+          <div class="relative">
+            <span
+              class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary/60"
+              style=""
+              >lock</span
+            >
+            <input
+              class="form-input flex w-full rounded-2xl border-none bg-white shadow-sm focus:ring-2 focus:ring-primary h-14 pl-12 pr-12 text-base placeholder:text-slate-400"
+              placeholder="••••••••"
+              type="password"
+            />
+            <span
+              class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-primary/60 cursor-pointer hover:text-primary-dark"
+              style=""
+              >visibility</span
+            >
+          </div>
+        </label>
+        <!-- Confirm Password -->
+        <label class="flex flex-col gap-2" style="">
+          <span
+            class="text-text-main text-sm font-semibold leading-normal ml-1"
+            style=""
+            >Confirmar contraseña</span
+          >
+          <div class="relative">
+            <span
+              class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary/60"
+              style=""
+              >lock_reset</span
+            >
+            <input
+              class="form-input flex w-full rounded-2xl border-none bg-white shadow-sm focus:ring-2 focus:ring-primary h-14 pl-12 pr-4 text-base placeholder:text-slate-400"
+              placeholder="••••••••"
+              type="password"
+            />
+          </div>
+        </label>
+        <!-- Terms and Conditions -->
+        <div class="flex items-start gap-3 py-2">
+          <input
+            class="mt-1 rounded-md border-primary/30 text-primary focus:ring-primary bg-white shadow-sm"
+            id="terms"
+            type="checkbox"
+          />
+          <label
+            class="text-xs text-text-main/70 leading-normal"
+            for="terms"
+            style=""
+          >
+            Al crear una cuenta, aceptas nuestros
+            <a class="text-primary-dark font-bold underline" href="#" style=""
+              >Términos de Servicio</a
+            >
+            y
+            <a class="text-primary-dark font-bold underline" href="#" style=""
+              >Política de Privacidad</a
+            >.
+          </label>
+        </div>
+        <!-- Submit Button -->
+        <button
+          class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-2xl shadow-lg shadow-primary/20 transition-all active:scale-[0.98] mt-4"
+          style=""
+        >
+          Crear Cuenta
+        </button>
+        <!-- Footer Links -->
+        <div class="pt-6 pb-10 text-center">
+          <p class="text-text-main/70 text-sm" style="">
+            ¿Ya tienes una cuenta?
+            <a
+              class="text-primary-dark font-bold ml-1 hover:underline"
+              href="#"
+              style=""
+              >Inicia sesión aquí</a
+            >
+          </p>
+        </div>
+      </div>
+      <!-- Background Accent (Subtle) -->
+      <div
+        class="fixed top-0 right-0 -z-10 w-80 h-80 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"
+      ></div>
+      <div
+        class="fixed bottom-0 left-0 -z-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"
+      ></div>
+    </div>
+  </body>
+</html>

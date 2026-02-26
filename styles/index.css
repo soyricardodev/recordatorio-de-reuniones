@@ -1,0 +1,195 @@
+.header {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header p {
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: semi-bold;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  max-width: 1600px;
+
+  margin-bottom: 16px;
+}
+
+.icono1 {
+  color: var(--hsla-example);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--card-bg);
+  border-radius: 9999px;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  padding: 8px;
+}
+
+section p {
+  margin-bottom: 12px;
+  color: var(--card-bg);
+}
+
+.card-horario-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--hsla-example);
+  background-color: var(--card-bg);
+  margin: 0 auto;
+
+  height: 120px;
+  padding: 8px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card-horario {
+  display: flexbox;
+  justify-content: start;
+  align-items: start;
+  box-shadow: 0 4px 8px var(--shadow);
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.card-horario-day p {
+  color: var(--primary-hover);
+  display: flex;
+}
+.card-horario-content {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.card-horario-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: end;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.pm {
+  color: var(--primary-dark);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.racha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.racha-header {
+  display: flex;
+  align-items: center;
+}
+
+.racha-header p {
+  color: var(--primary);
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.racha-progress-container {
+  display: flex;
+  gap: 0.5rem;
+
+  .progress {
+    height: 50px;
+    width: 50px;
+    background: var(--primary-light);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .progress.active {
+    background: var(--primary);
+  }
+}
+
+.card-razones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+  width: 100%;
+}
+
+.list-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--primary-light);
+  border-radius: 25px;
+}
+
+.list-icon-container {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary);
+  border-radius: 100%;
+  margin-right: 25px;
+}
+
+.card-ajuste-horarios {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px var(--shadow);
+  padding: 20px;
+}
+.card-ajuste-horarios-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.card-ajuste-horarios-content {
+  width: 100%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.card-ajuste-horarios-header p {
+  color: var(--primary);
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+footer {
+  margin-top: 32px;
+  padding: 16px;
+  text-align: center;
+  color: var(--text-muted);
+}

@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --primary: #5b3c88;
+  --primary-dark: #4c3370;
+  --primary-hover: #765a9b;
+  --primary-light: #9179af;
+  --background: #e3dceb;
+  --text-primary: #5b3c88;
+  --text-secondary: #3e2a59;
+  --text-muted: #94a3b8;
+  --border: #5b3c88;
+  --card-bg: #765a9b;
+  --shadow: #ac99c3;
+  --input-bg: #000000;
+  --hsla-example: #ffffff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  width: 100%;
+}
+
+input[type="time"] {
+  padding: 6px 10px;
+  border-radius: 0.5rem;
+  background-color: var(--card-bg);
+  color: var(--hsla-example);
+  font-weight: 200;
+  border: none;
+  font-family: inherit;
+}
+
+
+.button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  color: var(--hsla-example);
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: var(--primary-hover);
+}
+
+.button-secondary {
+  background-color: var(--primary-light);
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
