@@ -105,7 +105,8 @@ body {
 }
 
 .profile-icon {
-  font-size: 4rem;
+  width: 4rem;
+  height: 4rem;
   color: rgba(131, 104, 169, 0.3);
 }
 
@@ -149,6 +150,11 @@ body {
   background: none;
   border: none;
   padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .password-toggle:hover {

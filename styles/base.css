@@ -139,6 +139,20 @@ input[type="time"] {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 0 2px var(--primary);
 }
 
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
 .input-icon {
   position: absolute;
   left: 1rem;
@@ -146,6 +160,8 @@ input[type="time"] {
   transform: translateY(-50%);
   color: rgba(131, 104, 169, 0.6);
   pointer-events: none;
+  width: 24px;
+  height: 24px;
 }
 
 .terms-container {
