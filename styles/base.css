@@ -164,6 +164,12 @@ input[type="time"] {
   height: 24px;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
 .terms-container {
   display: flex;
   align-items: flex-start;

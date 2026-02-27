@@ -81,13 +81,14 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
+  cursor: pointer;
 }
 
 .profile-container {
   position: relative;
 }
 
-.profile-avatar {
+figure.profile-avatar {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -98,9 +99,29 @@ body {
   justify-content: center;
   overflow: hidden;
   transition: border-color 0.2s;
+  margin: 0;
 }
 
-.profile-container:hover .profile-avatar {
+.profile-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.profile-preview-img.active {
+  display: block;
+}
+
+#profile-placeholder {
+  display: block;
+}
+
+#profile-placeholder.hidden {
+  display: none;
+}
+
+.profile-container:hover figure.profile-avatar {
   border-color: rgba(131, 104, 169, 0.6);
 }
 
@@ -179,6 +200,18 @@ body {
 .login-link {
   font-weight: 700;
   margin-left: 0.25rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .bg-accent-1 {
