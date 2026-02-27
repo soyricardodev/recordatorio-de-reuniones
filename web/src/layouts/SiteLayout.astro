@@ -1,0 +1,30 @@
+---
+import Navbar from "../components/Navbar.astro";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Recordatorio de reuniones" } = Astro.props;
+const pageTitle = title;
+---
+
+<!doctype html>
+<html lang="es" data-theme="rdr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <title>{pageTitle} | Recordatorio de Reuniones</title>
+  </head>
+  <body class="bg-base-100 min-h-screen">
+    <Navbar pageTitle={pageTitle} />
+    <main class="container mx-auto px-4 py-6">
+      <slot />
+    </main>
+  </body>
+</html>

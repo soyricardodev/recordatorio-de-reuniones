@@ -1,17 +1,8 @@
 ---
-import "../styles/global.css";
+import SiteLayout from "../layouts/SiteLayout.astro";
+import AuthContent from "../components/AuthContent.astro";
 ---
 
-<html lang="es" data-theme="rdr">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Recordatorio de reuniones</title>
-	</head>
-	<body class="bg-base-100">
-		<h1>Astro</h1>
-	</body>
-</html>
+<SiteLayout title="Inicio" description="Página principal">
+  <AuthContent />
+</SiteLayout>

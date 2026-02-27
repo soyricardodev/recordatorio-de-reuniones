@@ -1,0 +1,10 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { SignIn } from "@clerk/astro/components";
+---
+
+<SiteLayout title="Iniciar sesión" description="Inicia sesión en tu cuenta">
+  <div class="flex justify-center items-center min-h-[60vh]">
+    <SignIn />
+  </div>
+</SiteLayout>
